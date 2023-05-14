@@ -15,4 +15,4 @@ $db_password = $_ENV['DB_PASSWORD'];
 
 $dsn = "$db_type:host=$db_host;dbname=$db_name";
 $conn = new PDO($dsn, $db_username, $db_password);
-
+session_start();
